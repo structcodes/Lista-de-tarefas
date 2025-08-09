@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <title>Todo list</title>
+</head>
+<body class="bg-ligth text-dark">
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">Lista de Tarefas</h2>
+
+    <!-- Botão do tema  -->
+     <div class="d-flex justify-content-end mb-3">
+       <button id="alternar-tema" class="btn btn-outline-dark">🌙 Modo Escuro</button>
+  </div>
+
+     <!-- Seleção do dia -->
+      <div class="mb-3">
+        <label for="dia" class="form-label">Escolha o dia:</label>
+        <select id="dia" class="form-select">
+          <option>Segunda</option>
+          <option>Terça</option>
+          <option>Quarta</option>
+          <option>Quinta</option>
+          <option>Sexta</option>
+          <option>Sábado</option>
+          <option>Domingo</option>
+        </select>
+      </div>
+
+      <!-- Seleção da categoria -->
+       <div class="mb-3">
+        <label for="categoria" class="form-label">Categoria:</label>
+        <select id="categoria" class="form-select">
+          <option>Trabalho</option>
+          <option>Estudos</option>
+          <option>Casa</option>
+          <option>Pessoal</option>
+        </select>
+       </div>
+
+       <!-- Formulário da tarefa -->
+        <div class="input-group  mb-3">
+          <input type="text" id="tarefa" class="form-control" placeholder="Digite sua tarefa">
+          <button id="adicionar" class="btn btn-primary">Adicionar</button>
+        </div>
+
+        <!-- Categoria -->
+    <ul class="nav nav-tabs" id="abas-categorias" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#trabalho" type="button">Trabalho</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#estudos" type="button">Estudos</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#casa" type="button">Casa</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pessoal" type="button">Pessoal</button>
+      </li>
+    </ul>
+
+    <!-- Conteudo das abas -->
+     <div class="tab-content mt-3" id="conteudo-categorias">
+      <div class="tab-pane fade show active" id="trabalho"></div>
+      <div class="tab-pane" id="estudos"></div>
+      <div class="tab-pane" id="casa"></div>
+      <div class="tab-pane" id="pessoal"></div>
+     </div>
+
+     <!-- Mensagem de parabens -->
+      <div id="mensagem-parabens" class="alert alert-success mt-4 d-none">
+        🎉 Parabéns! Você concluiu todas as tarefas deste dia!
+  </div>
+  </div>
+
+  <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
