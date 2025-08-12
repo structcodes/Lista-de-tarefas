@@ -21,3 +21,7 @@ Este é um projeto pessoal desenvolvido para praticar e consolidar conhecimentos
 - **CSS3**
 - **Bootstrap 5**
 - **jQuery 3.6**
+
+## 🌐 Deploy do Projeto
+Acesse aqui: (https://structcodes.github.io/Lista-de-tarefas/)
+
